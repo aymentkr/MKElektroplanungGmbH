@@ -1,0 +1,16 @@
+.img-fluid {
+  height: auto;
+  width: 100%;
+}
+.control {
+  margin-bottom: 10px;
+}
+.control input[type='checkbox'] {
+  transform: scale(1.5);
+}
+.control span {
+  font-size: 20px;
+}
+.note {
+  color: #ff3333;
+}
