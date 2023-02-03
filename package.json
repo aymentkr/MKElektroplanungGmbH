@@ -23,6 +23,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "dom7": "^4.0.4",
+    "firebase-tools": "^11.22.0",
     "fr-carousel": "^1.2.1",
     "rxjs": "~7.5.0",
     "swiper": "^8.4.5",
