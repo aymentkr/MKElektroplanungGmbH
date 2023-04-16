@@ -1,5 +1,30 @@
+
+<div class="content">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+        <h3 class="heading-section">Referenzen</h3>
+      </div>
+    </div>
+    <div class="row">
+      <p class="mb-4">
+        Im nachfolgenden können Sie sich einen Überblick über ausgewählte Projekte, die erbrachten Leistungen und deren Umfang machen. Wir bauen die Listen im Laufe der Zeit weiter aus. In Kürze können Sie durch einen Klick auf die einzelnen Bilder weitergehende Informationen zum Projekt erhalten.
+      </p>
+      <p class="mb-4">
+        Eine vollständige Liste von unseren Referenzen können Sie sich hier ansehen.
+      </p>
+      <h4 class="text-primary">Bildungseinrichtungen</h4>
+      <h4 class="text-primary">öffentliche Gebäude</h4>
+    </div>
+  </div>
+</div>
+
+
+
 <fr-carousel>
   <ng-template FrSlide *ngFor="let image of images">
     <img class="img-fluid" [src]="image" />
+    <div class="carousel-caption">
+    </div>
   </ng-template>
 </fr-carousel>

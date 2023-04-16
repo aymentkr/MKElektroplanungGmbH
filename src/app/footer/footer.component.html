@@ -13,13 +13,13 @@
         <div class="col-md-4 col-sm-12">
           <h5 class="mb-4 mt-3">Service</h5>
           <ul class="list-unstyled">
-            <li><a class="reset-anchor text-primary" href="#">Beratung</a></li>
-            <li><a class="reset-anchor text-primary" href="#">Planung</a></li>
+            <li><a class="reset-anchor text-primary" [routerLink]="['/beratung']">Beratung</a></li>
+            <li><a class="reset-anchor text-primary" [routerLink]="['/planung']">Planung</a></li>
             <li>
-              <a class="reset-anchor text-primary" href="#">Projektierung</a>
+              <a class="reset-anchor text-primary" [routerLink]="['/projektierung']">Projektierung</a>
             </li>
             <li>
-              <a class="reset-anchor text-primary" href="#">Bauüberwachung</a>
+              <a class="reset-anchor text-primary" [routerLink]="['/bauüberwachung']">Bauüberwachung</a>
             </li>
           </ul>
         </div>
@@ -55,7 +55,12 @@
           <a href="#"><i class="icon ion-social-youtube"></i></a>
           <a href="#"><i class="icon ion-social-instagram"></i></a>
         </div>
-        <p class="copyright">M&K Elektroplanung GmbH © {{ anio }}</p>
+
+        <p class="copyright">
+          M&K Elektroplanung GmbH © {{ anio }}&nbsp;
+          <a href="#" id="imprint">Impressum </a>&nbsp;
+          <a href="#" id="imprint">Datenschutzerklärung </a>&nbsp;
+        </p>
       </div>
     </div>
   </footer>

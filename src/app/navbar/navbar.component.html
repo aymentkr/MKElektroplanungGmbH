@@ -1,35 +1,18 @@
 <!-- navbar-->
-<header class="header">
-  <nav
-    class="navbar navbar-expand-lg navbar-dark position-absolute w-100"
-    id="navbar"
-  >
+<header class="header" >
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top shadow" id="navbar">
     <div class="container">
-      <a class="navbar-brand d-block d-lg-none" href="#!">
-        <img src="assets/img/logo.png" alt="..." width="60" />
-      </a>
-      <button
-        class="navbar-toggler navbar-toggler-end"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span></span><span></span><span></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav d-none d-lg-block px-4">
+        <ul class="navbar-nav d-none d-lg-block px-5">
           <li class="nav-item m-0">
-            <a class="navbar-brand m-0" (click)="exit()"
-              ><img src="assets/img/logo.png" alt="..." width="80"
-            /></a>
+            <a class="navbar-brand m-0 " (click)="exit()" >
+              <img ngSrc="assets/img/logo.png" alt="..." width="50" height="35"/>
+            </a>
           </li>
         </ul>
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" (click)="exit()">Startseite</a>
+            <a class="nav-link" [routerLink]="['/']" >Startseite </a>
           </li>
 
 
@@ -48,16 +31,16 @@
               class="dropdown-menu dropdown-menu-dark"
               aria-labelledby="navbarDarkDropdownMenuLink1"
             >
-              <a class="dropdown-item" href="#">Beratung</a>
-              <a class="dropdown-item" href="#">Planung</a>
-              <a class="dropdown-item" href="#">Projektierung</a>
-              <a class="dropdown-item" href="#">Bauüberwachung</a>
+              <a class="dropdown-item" [routerLink]="['/beratung']">Beratung</a>
+              <a class="dropdown-item" [routerLink]="['/planung']">Planung</a>
+              <a class="dropdown-item" [routerLink]="['/projektierung']">Projektierung</a>
+              <a class="dropdown-item" [routerLink]="['/bauüberwachung']">Bauüberwachung</a>
             </ul>
           </li>
 
 
           <li class="nav-item">
-            <a class="nav-link" (click)="onClick('referenzen')">Referenzen</a>
+            <a class="nav-link" [routerLink]="['/referenzen']">Referenzen</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -76,7 +59,9 @@
               aria-labelledby="navbarDarkDropdownMenuLink3"
             >
               <a class="dropdown-item" (click)="onClick('team')">Über uns</a>
-              <a class="dropdown-item" (click)="onClick('karriere')">Karriere</a>
+              <a class="dropdown-item" [routerLink]="['/jobs']">Karriere</a>
+              <a class="dropdown-item" [routerLink]="['/']">Impressum</a>
+              <a class="dropdown-item" [routerLink]="['/']">Datenschutzerklärung</a>
             </ul>
           </li>
           <li class="nav-item">
