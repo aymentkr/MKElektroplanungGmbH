@@ -1,0 +1,7 @@
+.rectangle-form {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
